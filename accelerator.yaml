@@ -7,7 +7,7 @@ accelerator:
   options:
 
   - name: include
-    display: Include
+    displayName: Include
     inputType: select
     defaultValue: all
     choices:

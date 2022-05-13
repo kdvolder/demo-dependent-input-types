@@ -1,0 +1,10 @@
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: demo-dependent-input-types
+  namespace: accelerator-system
+spec:
+  git:
+    ref:
+      branch: main
+    url: https://github.com/kdvolder/demo-dependent-input-types
