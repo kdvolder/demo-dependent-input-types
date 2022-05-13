@@ -1,11 +1,10 @@
 accelerator:
-  displayName: Demo Input Types
-  description: "Accelerator with options for each inputType"
+  displayName: Demo Dependent Input Types
+  description: "Accelerator with options for each inputType used as 'dependant' option"
   iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-tanzu-light.png
   tags: ["demo", "options"]
 
   options:
-
   - name: include
     displayName: Include
     inputType: select
