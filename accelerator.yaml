@@ -18,14 +18,14 @@ accelerator:
 
   - name: text
     dependsOn:
-    - name: include
+      name: include
       value: all
     display: true
     defaultValue: Text value
 
   - name: toggle
     dependsOn:
-    - name: include
+      name: include
       value: all
     inputType: checkbox
     display: true
@@ -34,7 +34,7 @@ accelerator:
 
   - name: textarea
     dependsOn:
-    - name: include
+      name: include
       value: all
     inputType: textarea
     display: true
@@ -44,7 +44,7 @@ accelerator:
 
   - name: checkbox
     dependsOn:
-    - name: include
+      name: include
       value: all
     inputType: checkbox
     display: true
@@ -61,7 +61,7 @@ accelerator:
 
   - name: select
     dependsOn:
-    - name: include
+      name: include
       value: all
     inputType: select
     display: true
@@ -76,7 +76,7 @@ accelerator:
 
   - name: radio
     dependsOn:
-    - name: include
+      name: include
       value: all
     inputType: radio
     display: true
