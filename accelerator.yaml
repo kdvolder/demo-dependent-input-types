@@ -6,17 +6,36 @@ accelerator:
 
   options:
 
+  - name: include
+    display: Include
+    inputType: select
+    defaultValue: all
+    choices:
+    - text: All
+      value: all
+    - text: None
+      value: none
+
   - name: text
+    dependsOn:
+    - name: include
+      value: all
     display: true
     defaultValue: Text value
 
   - name: toggle
+    dependsOn:
+    - name: include
+      value: all
     inputType: checkbox
     display: true
     dataType: boolean
     defaultValue: true
 
   - name: textarea
+    dependsOn:
+    - name: include
+      value: all
     inputType: textarea
     display: true
     defaultValue: |
@@ -24,6 +43,9 @@ accelerator:
       Text line 2
 
   - name: checkbox
+    dependsOn:
+    - name: include
+      value: all
     inputType: checkbox
     display: true
     dataType: [string]
@@ -38,6 +60,9 @@ accelerator:
         value: value-3
 
   - name: select
+    dependsOn:
+    - name: include
+      value: all
     inputType: select
     display: true
     defaultValue: value-2
@@ -50,6 +75,9 @@ accelerator:
         value: value-3
 
   - name: radio
+    dependsOn:
+    - name: include
+      value: all
     inputType: radio
     display: true
     defaultValue: value-2
